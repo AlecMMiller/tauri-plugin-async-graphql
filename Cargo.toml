@@ -10,8 +10,10 @@ links = "tauri-plugin-async-graphql"
 
 [dependencies]
 tauri = { version = "2.0.3" }
-serde = "1.0"
+serde = { version = "1.0", features = ["derive"] }
 thiserror = "1.0"
+async-graphql = "7.0.11"
+serde_json = "1.0.132"
 
 [build-dependencies]
 tauri-plugin = { version = "2.0.1", features = ["build"] }
